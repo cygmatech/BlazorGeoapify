@@ -176,12 +176,12 @@ Por:
 
 
 
-> Você deve subistituir **YOUR_API_KEY** pela sua api key que você gerou quando criou a sua conta no site da Geoapify. 
+> Você deve substituir **YOUR_API_KEY** pela sua api key que você gerou quando criou a sua conta no site da Geoapify. 
 
 - Abra o arquivo wwwroot/index.html 
 
 Dentro do **body**
-Subtitua:
+Substitua:
 ```html
 <script src="_framework/blazor.webassembly.js"></script> 
 
