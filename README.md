@@ -1,4 +1,4 @@
-# Blazor Geoapify
+# Blazor Geoapify Autocomplete
 
 Nos aplicativos e webpages modernos é preciso que se tenha uma maneira prática e amigável de obter os dados de locais e endereços, como rua, bairro, cidade, cep...  
 
