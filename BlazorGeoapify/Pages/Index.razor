@@ -1,0 +1,78 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Blazor Geoapify</h1>
+
+Exemplo de Geoapify Autocomplete em BLazor.
+
+<div id="autocomplete" class="autocomplete-container"></div>
+   
+   <style>
+  
+       body {
+           font: 16px;
+           background: #f3f5f6;
+       }
+   
+       .autocomplete-container {
+           /*the container must be positioned relative:*/
+           position: relative;
+       }
+  
+       .geoapify-autocomplete-input {
+           width: calc(100% - 43px);
+           outline: none;
+           border: 1px solid rgba(0, 0, 0, 0.2);
+           padding: 10px;
+           padding-right: 31px;
+           font-size: 16px;
+       }
+   
+       .geoapify-autocomplete-items {
+           position: absolute;
+           border: 1px solid rgba(0, 0, 0, 0.1);
+           box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
+           border-top: none;
+           background-color: #fff;
+           z-index: 99;
+           top: calc(100% + 2px);
+           left: 0;
+           right: 0;
+       }
+   
+        .geoapify-autocomplete-items div {
+               padding: 10px;
+               cursor: pointer;
+           }
+   
+         .geoapify-autocomplete-items div:hover {
+                   /*when hovering an item:*/
+                   background-color: rgba(0, 0, 0, 0.1);
+               }
+   
+         .geoapify-close-button {
+   			color: rgba(0, 0, 0, 0.4);
+   			cursor: pointer;
+   			position: sticky;
+   			right: 5px;
+   			top: 0;
+   			height: 100%;
+   			display: none;
+   			align-items: center;
+       }
+   
+           .geoapify-close-button.visible {
+               display: unset;
+           }
+   
+           .geoapify-close-button:hover {
+               color: rgba(0, 0, 0, 0.6);
+           }
+   
+       .geoapify-autocomplete-items .active {
+           /*when navigating through the items using the arrow keys:*/
+           background-color: rgba(0, 0, 0, 0.1);
+       }
+   
+   </style>
